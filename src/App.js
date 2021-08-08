@@ -6,7 +6,7 @@ import CharacterList from "./components/CharacterList";
 
 function App() {
 
-  let baseApiUrl = "https://www.breakingbadapi.com/api/";
+  let baseApiUrl = "https://www.breakingbadapi.com/api/ s";
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [search, setSearch] = useState("")
