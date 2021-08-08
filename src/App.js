@@ -20,6 +20,7 @@ function App() {
     const result = await axios(baseApiUrl + `characters?name=${search}`);
     setItems(result.data)
     setIsLoading(false)
+    console.log(isLoading)
   }
   useEffect(() => {
     fetchItems()
