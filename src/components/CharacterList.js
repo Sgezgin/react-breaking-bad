@@ -13,7 +13,8 @@ function CharacterList({ items, isLoading }) {
                         items.map(item => (
                             getCaracterCard(item)
                         ))
-                    )}
+                    ) }
+                   
                 </div>
             </div>
         </>
@@ -23,7 +24,7 @@ function CharacterList({ items, isLoading }) {
 
 const getCaracterCard = (item) => {
     return (
-        <div key={item.char_id} >
+        <div key={item.char_id}  className="bg-white rounded-xl p-4   transition duration-500 transform hover:scale-105 cursor-pointer">
             <h1>{item.name}</h1>
             <img className="h-48 w-52" src={item.img} />
         </div>

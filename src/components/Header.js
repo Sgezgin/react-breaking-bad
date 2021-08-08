@@ -23,10 +23,12 @@ function Header({changeSearch}) {
 
 
             </div>
-            <div>
+            <div className="flex justify-center" >
 
-                <form>
-                    <input  onChange={(e)=> searchCharacter(e)}  type="text" autoFocus/>
+                <form >
+                    <input placeholder="Oyuncu İsmi Yazınız..." 
+                    className="focus:outline-none focus:ring focus:border-blue-300 min-w-full p-2 mx-auto"
+                    onChange={(e)=> searchCharacter(e)}  type="text" autoFocus/>
                 </form>
             </div>
         </>

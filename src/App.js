@@ -13,10 +13,11 @@ function App() {
 
   const changeSearch =(text)=>{
     setSearch(text);
-    console.log(text);
+ 
   }
 
   const fetchItems = async () => {
+    setIsLoading(true)
     const result = await axios(baseApiUrl + `characters?name=${search}`);
     setItems(result.data)
     setIsLoading(false)
@@ -31,6 +32,7 @@ function App() {
 
     <div className="bg-gradient-to-r from-green-400 via-black-500 to-green-900 w-screen h-screen">    
       <Header changeSearch={changeSearch}/>
+      <br/>
       <CharacterList isLoading={isLoading} items={items} />
     </div>
   );
