@@ -13,6 +13,7 @@ function App() {
 
   const changeSearch =(text)=>{
     setSearch(text);
+    console.log(text);
   }
 
   const fetchItems = async () => {
